@@ -1,0 +1,31 @@
+1. завдання
+const book = {
+    title: "Into the Pit",
+    author: " Scott Cawthon і Elley Cooper",
+    year: 2019,
+
+    getSummary () {
+        return `${this.title} був написаний${this.author} в ${this.year}.`;
+    },
+};
+
+console.log(book.getSummary());
+
+2.задача
+const book = {
+    title: "Into the Pit",
+    author: " Scott Cawthon і Elley Cooper",
+    year: 2019,
+
+    getSummary () {
+        return `${this.title} був написаний${this.author} в ${this.year}.`;
+    },
+
+    setYear (newYear) {
+        this.year = newYear;
+    },
+};
+
+book.setYear(2020);
+
+console.log(book.getSummary());
